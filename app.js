@@ -41,13 +41,13 @@ document.addEventListener('scroll', () => {
             logo.setAttribute('src', './assets/white-bg.svg')
             navigationLinks.forEach(el => el.style.color = 'var(--pri-den-gray-100)')
             nav.style.backgroundColor = 'rgba(255,255,255, .7)';
-            square.forEach(el => el.style.animation = 'slide-in .5s ease-in forwards');
+            // square.forEach(el => el.style.animation = 'slide-in .5s ease-in forwards');
       } else {
             logo.setAttribute('src', './assets/dark-bg.png')
             navigationLinks.forEach(el => el.style.color = 'white')
             nav.style.backgroundColor = 'transparent';
             tracker.style.position = `relative`;
-            square.forEach(el => el.style.animation = 'slide-back .5s ease-in forwards');
+            // square.forEach(el => el.style.animation = 'slide-back .5s ease-in forwards');
       }
 })
 
@@ -85,5 +85,58 @@ document.addEventListener('scroll', () => {
             navigationLinks.forEach(el => el.style.color = 'white')
             nav.style.backgroundColor = 'rgba(0,0,0, .7)';
             nav.style.transition = '.5s';
+      }
+})
+
+
+// T E S T // 
+
+
+const test = document.querySelectorAll('#phase1');
+const test1 = document.querySelectorAll('#phase2');
+const test2 = document.querySelectorAll('#phase3');
+const test3 = document.querySelectorAll('#phase4');
+const test4 = document.querySelectorAll('#phase5');
+
+
+
+document.addEventListener('scroll', () => {
+
+      if (scrollY > 1600) {
+            test.forEach(el => el.style.animation = 'slide-in .2s ease-in forwards');
+      } else {
+            test.forEach(el => el.style.animation = 'slide-back .2s ease-in forwards');
+      }
+})
+document.addEventListener('scroll', () => {
+
+      if (scrollY > 1850) {
+            test1.forEach(el => el.style.animation = 'slide-in .2s ease-in forwards');
+      } else {
+            test1.forEach(el => el.style.animation = 'slide-back .2s ease-in forwards');
+      }
+})
+document.addEventListener('scroll', () => {
+
+      if (scrollY > 2100) {
+            test2.forEach(el => el.style.animation = 'slide-in .2s ease-in forwards');
+      } else {
+            test2.forEach(el => el.style.animation = 'slide-back .2s ease-in forwards');
+      }
+})
+document.addEventListener('scroll', () => {
+
+      if (scrollY > 2450) {
+            test3.forEach(el => el.style.animation = 'slide-in .2s ease-in forwards');
+      } else {
+            test3.forEach(el => el.style.animation = 'slide-back .2s ease-in forwards');
+      }
+})
+document.addEventListener('scroll', () => {
+
+      if (scrollY > 2800) {
+            test4.forEach(el => el.style.animation = 'slide-in .2s ease-in forwards');
+      } else {
+            test4.forEach(el => el.style.animation = 'slide-back .2s ease-in forwards');
       }
 })
