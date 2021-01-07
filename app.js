@@ -19,9 +19,10 @@ const h1 = document.querySelector('.h1');
 
 document.addEventListener('scroll', () => {
 
-      let value = scrollY - 1800;
+      let value = scrollY - 1850;
 
-      if (scrollY > 1800) {
+
+      if (scrollY > 1850) {
             tracker.style.top = `${value}px`;
 
       } else if (scrollY > 2400) {
@@ -29,6 +30,7 @@ document.addEventListener('scroll', () => {
             tracker.style.top = `${value}px`;
       }
 })
+
 
 // navigation colors change on scroll 
 
