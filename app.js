@@ -8,7 +8,7 @@ const monuntain2 = document.querySelector('#mountain2')
 const monuntain3 = document.querySelector('#mountain3')
 const paragraph1 = document.querySelector('.paragraph1');
 const contactBtn = document.querySelector('.contact__btn');
-const paragraph = document.querySelector('.paragraph');
+const paragraph = document.querySelector('.paragraph1');
 const h1 = document.querySelector('.h1');
 
 
@@ -63,15 +63,7 @@ document.addEventListener('scroll', () => {
       }
 })
 
-document.addEventListener('scroll', () => {
-      if (scrollY > 2400) {
-            paragraph.classList.add('animate-paragraph');
-            h1.classList.add('animate-h1');
-      } else {
-            paragraph.classList.remove('animate-paragraph');
-            h1.classList.remove('animate-h1');
-      }
-})
+
 
 document.addEventListener('scroll', () => {
 

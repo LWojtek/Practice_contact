@@ -61,9 +61,9 @@
       }
 
       .news__title {
-            position: absolute;
-            top: 650px;
-            left: -200px;
+            position: relative;
+            top: 150px;
+            width: 100%;
       }
 
       .articles__wrapper {
@@ -74,66 +74,20 @@
       .card {
             width: 260px;
             height: 300px;
-            margin-right: 50px;
+            margin: 10px;
       }
 
-      .flex__wrapper {
-            flex-flow: row wrap;
-            flex-basis: 70%;
-      }
-
-      .flex__wrapper img {
-            height: 150px;
-            width: 100%;
-
-
-      }
 
       .articles__track {
-            flex-grow: 1;
-            flex-basis: 30%;
-            border: none;
             max-height: 1800px;
-            overflow-y: hidden;
       }
 
-      .card::before {
-            top: 118px;
-      }
-
-      .card h2 {
-            padding: 10px 0 0 0;
-            font-size: 1.4rem;
-      }
-
-      .card p {
-            padding: 0;
-      }
-
-      .square {
-            width: 120px;
-            height: 120px;
+      .articles__track::after {
+            width: 35%;
       }
 
 
-      .sub__content {
-            margin-top: 100px;
-            margin-bottom: 50px;
-      }
 
-      .sub__content p {
-            padding: 150px 300px 0 300px;
-            ;
-            ;
-      }
-
-      .article__btn {
-            padding: 5px 139px 11px 20px;
-      }
-
-      .article__btn .line {
-            top: 23px;
-      }
 
       .logo__footer {
             position: relative;
@@ -145,6 +99,14 @@
             top: 5px;
             right: -600px;
 
+      }
+
+      .tab {
+            margin-right: 0;
+
+            p {
+                  margin-right: 10px !important;
+            }
       }
 
 
@@ -178,6 +140,29 @@
       }
 
 
+      .rectangle {
+
+            top: 550px;
+            box-shadow: 0 3px 2px rgb(202, 202, 202);
+
+      }
+
+      .contact__text,
+      .locations__container--wrapper {
+            margin-top: 180px;
+      }
+
+      .contact__text {
+            padding: 50px 90px;
+
+            h1 {
+                  font-size: 5rem;
+            }
+      }
+
+      .articles__track::after {
+            bottom: -2850px;
+      }
 
 
 
