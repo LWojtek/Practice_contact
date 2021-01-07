@@ -19,9 +19,9 @@ const h1 = document.querySelector('.h1');
 
 document.addEventListener('scroll', () => {
 
-      let value = scrollY - 1750;
+      let value = scrollY - 1735;
 
-      if (scrollY > 1750) {
+      if (scrollY > 1725) {
             tracker.style.top = `${value}px`;
 
       } else if (scrollY > 2400) {
