@@ -658,8 +658,9 @@ nav ul li a:hover {
 
 .news__title {
   position: relative;
-  top: 0px;
-  padding: 120px 500px 50px 200px;
+  top: 50px;
+  padding: 100px 200px 150px 300px;
+  margin-top: 50px;
   background-color: var(--pri-den-gray-005);
 }
 
@@ -714,7 +715,7 @@ nav ul li a:hover {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   padding-top: 10px;
-  padding-right: 250px;
+  padding-right: 230px;
   padding-bottom: 80px;
   background-color: var(--pri-den-gray-005);
 }
@@ -723,8 +724,8 @@ nav ul li a:hover {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
   border: none;
   max-height: 1800px;
   overflow-y: hidden;
@@ -734,12 +735,12 @@ nav ul li a:hover {
   content: "";
   position: absolute;
   z-index: 2;
-  bottom: -2280px;
+  bottom: -2380px;
   left: 0;
   pointer-events: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, var(--pri-den-gray-005)));
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--pri-den-gray-005) 50%);
-  width: 30%;
+  width: 35%;
   height: 200px;
 }
 
@@ -813,8 +814,8 @@ nav ul li a:hover {
 }
 
 .flex__wrapper {
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -831,7 +832,7 @@ nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
+  margin: 15px;
   text-align: center;
   border: black solid 1px;
   width: 300px;
@@ -1229,21 +1230,25 @@ footer {
     position: relative;
     top: 150px;
     width: 100%;
+    padding-left: 100px;
   }
   .articles__wrapper {
     padding-top: 220px;
     padding-right: 0;
   }
   .card {
-    width: 260px;
-    height: 300px;
+    width: 230px;
+    height: 270px;
     margin: 10px;
   }
   .articles__track {
     max-height: 1800px;
   }
   .articles__track::after {
-    width: 35%;
+    width: 40%;
+  }
+  .track {
+    margin-right: 5px !important;
   }
   .logo__footer {
     position: relative;

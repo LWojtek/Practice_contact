@@ -32,9 +32,11 @@
 }
 
 .tab {
+
       a {
             font-size: 1.5rem;
             color: var(--pri-freshwater-blue-100-default);
+
       }
 
       a:hover {
@@ -47,6 +49,8 @@
       }
 
 }
+
+
 
 .tab:nth-child(1) {
 
@@ -74,8 +78,9 @@
 
 .news__title {
       position: relative;
-      top: 0px;
-      padding: 120px 500px 50px 200px;
+      top: 50px;
+      padding: 100px 200px 150px 300px;
+      margin-top: 50px;
       background-color: var(--pri-den-gray-005);
 
       h1 {
@@ -125,14 +130,14 @@
       flex-flow: row wrap;
       // justify-content: flex-end;
       padding-top: 10px;
-      padding-right: 250px;
+      padding-right: 230px;
       padding-bottom: 80px;
       background-color: var(--pri-den-gray-005)
 }
 
 .articles__track {
       flex-grow: 1;
-      flex-basis: 35%;
+      flex-basis: 40%;
       border: none;
       max-height: 1800px;
       overflow-y: hidden;
@@ -142,13 +147,13 @@
       content: "";
       position: absolute;
       z-index: 2;
-      bottom: -2280px;
+      bottom: -2380px;
       left: 0;
       pointer-events: none;
       background-image: linear-gradient(to bottom,
                   rgba(255, 255, 255, 0),
                   var(--pri-den-gray-005) 50%);
-      width: 30%;
+      width: 35%;
       height: 200px;
 }
 
@@ -217,7 +222,7 @@
 }
 
 .flex__wrapper {
-      flex-basis: 65%;
+      flex-basis: 60%;
       flex-grow: 2;
       display: flex;
       flex-flow: row wrap;
@@ -228,7 +233,7 @@
 
 .card {
       display: flex;
-      margin: 20px;
+      margin: 15px;
       text-align: center;
       border: black solid 1px;
       width: 300px;
