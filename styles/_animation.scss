@@ -1,0 +1,181 @@
+.animate-paragraph {
+      animation: from-right1 .3s ease-in forwards,
+            appear .8s ease-in forwards;
+}
+
+.animate-paragraph1 {
+      animation: from-top .3s ease-in forwards,
+            appear .8s ease-in forwards;
+      animation-delay: .7s;
+}
+
+.animate-contact {
+      animation: from-right1 .3s ease-in forwards,
+            appear .8s ease-in forwards;
+      animation-delay: 1s;
+}
+
+.animate-h1 {
+      animation: from-bottom1 .3s ease-in,
+            appear 1s ease-in forwards;
+      animation-delay: .5s;
+}
+
+.article__btn:hover .line {
+      animation: line-move .95s ease-in-out infinite forwards;
+}
+
+.mountain1-animation {
+      animation: mountain1 2500ms ease-in-out forwards;
+}
+
+.mountain2-animation {
+      animation: mountain2 2s ease-in-out forwards;
+      animation-delay: .2s;
+}
+
+
+.mountain3-animation {
+      animation: mountain3 3s ease-in-out forwards;
+      animation-delay: .3s;
+}
+
+
+
+@keyframes slide-in {
+      from {
+            transform: translateX(0px) translateY(0px)
+      }
+
+      to {
+            transform: translateX(-8px) translateY(8px)
+      }
+}
+
+@keyframes slide-back {
+      from {
+            transform: translateX(-8px) translateY(8px)
+      }
+
+      to {
+            transform: translateX(0px) translateY(0px)
+      }
+}
+
+@keyframes from-right {
+      from {
+            transform: translateX(50px);
+            opacity: 0;
+      }
+
+      to {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+@keyframes from-top {
+      from {
+            transform: translateY(-50px);
+            opacity: 0;
+      }
+
+      to {
+            transform: translateY(0px);
+            opacity: 1;
+      }
+}
+
+
+@keyframes from-right1 {
+      from {
+            transform: translateX(150px);
+            opacity: 0;
+      }
+
+      to {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+
+@keyframes from-bottom {
+      from {
+            transform: translateY(100px);
+
+      }
+
+      to {
+            transform: translateY(0px);
+
+      }
+}
+
+@keyframes from-bottom1 {
+      from {
+            transform: translateY(200px);
+
+      }
+
+      to {
+            transform: translateY(0px);
+
+      }
+}
+
+@keyframes appear {
+      from {
+            opacity: 0;
+      }
+
+      to {
+            opacity: 1;
+      }
+}
+
+@keyframes line-move {
+
+      0%,
+      100% {
+            transform: translateX(0) scaleX(.35);
+      }
+
+      50% {
+            transform: translateX(-40px) scaleX(.35);
+      }
+
+}
+
+
+
+
+@keyframes mountain1 {
+      from {
+            transform: translateX(-90px)
+      }
+
+      to {
+            transform: translateX(0px)
+      }
+}
+
+@keyframes mountain2 {
+      from {
+            transform: translateX(-30px) translateY(8px);
+      }
+
+      to {
+            transform: translateX(0px) translateY(5px);
+      }
+}
+
+@keyframes mountain3 {
+      from {
+            transform: translateX(0px) translateY(10px);
+      }
+
+      to {
+            transform: translateX(20px) translateY(10px);
+      }
+}

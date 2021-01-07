@@ -1,0 +1,115 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-size: 62.5%;
+      outline: none;
+}
+
+:root {
+      --white: #ffffff;
+      --pri-valley-green-100-default: #c2d500;
+      --pri-den-gray-100: #323e48;
+      --pri-freshwater-blue-100-default: #00a6ce;
+      --sec-sea-foam-green-100-default: #00afaa;
+      --sec-sunset-yellow-100-default: #faa31b;
+      --pri-valley-green-110: #afc000;
+      --sec-orchid-purple-100-default: #e53bb3;
+      --sec-salmon-pink-100-default: #ff6b68;
+      --pri-valley-green-090: #c8d91a;
+      --sec-saltwater-blue-100-default: #005cb9;
+      --pri-valley-green-080: #cedd33;
+      --pri-valley-green-060: #dae666;
+      --pri-valley-green-070: #d4e24d;
+      --pri-valley-green-050: #e1ea80;
+      --pri-valley-green-040: #e7ee99;
+      --pri-valley-green-020: #f3f7cc;
+      --pri-valley-green-030: #edf2b3;
+      --pri-valley-green-010: #f9fbe6;
+      --pri-freshwater-blue-080: #33b8d8;
+      --pri-freshwater-blue-110: #0095b9;
+      --pri-freshwater-blue-090: #1aafd3;
+      --pri-freshwater-blue-030: #b3e4f0;
+      --pri-freshwater-blue-040: #99dbeb;
+      --pri-freshwater-blue-050: #80d3e7;
+      --pri-freshwater-blue-060: #66cae2;
+      --pri-freshwater-blue-020: #ccedf5;
+      --pri-freshwater-blue-070: #4dc1dd;
+      --pri-den-gray-110: #2d3841;
+      --pri-freshwater-blue-010: #e6f6fa;
+      --pri-den-gray-140: #1e252b;
+      --pri-den-gray-090: #47515a;
+      --pri-den-gray-080: #5b656d;
+      --pri-den-gray-070: #70787f;
+      --pri-den-gray-060: #848b91;
+      --pri-den-gray-050: #999fa4;
+      --pri-den-gray-040: #adb2b6;
+      --pri-den-gray-030: #c2c5c8;
+      --pri-den-gray-020: #d6d8da;
+      --pri-den-gray-010: #ebeced;
+      --sec-saltwater-blue-110: #0053a7;
+      --sec-saltwater-blue-090: #1a6cc0;
+      --sec-saltwater-blue-080: #337dc7;
+      --sec-saltwater-blue-070: #4d8dce;
+      --pri-den-gray-005: #f7f9fb;
+      --sec-saltwater-blue-060: #669dd5;
+      --sec-saltwater-blue-050: #80aedc;
+      --sec-saltwater-blue-040: #99bee3;
+      --sec-saltwater-blue-020: #ccdef1;
+      --sec-saltwater-blue-010: #e6eff8;
+      --sec-saltwater-blue-030: #b3ceea;
+      --sec-sea-foam-green-110: #009e99;
+      --sec-sea-foam-green-090: #1ab7b3;
+      --sec-sea-foam-green-080: #33bfbb;
+      --sec-sea-foam-green-070: #4dc7c4;
+      --sec-sea-foam-green-060: #66cfcc;
+      --sec-sea-foam-green-050: #80d7d5;
+      --sec-sea-foam-green-030: #b3e7e6;
+      --sec-sea-foam-green-040: #99dfdd;
+      --sec-sea-foam-green-010: #e6f7f7;
+      --sec-sea-foam-green-020: #ccefee;
+      --sec-sunset-yellow-110: #e19318;
+      --sec-sunset-yellow-090: #fbac32;
+      --sec-sunset-yellow-080: #fbb549;
+      --sec-sunset-yellow-070: #fcbf5f;
+      --sec-sunset-yellow-060: #fcc876;
+      --sec-sunset-yellow-040: #fddaa4;
+      --sec-sunset-yellow-030: #fee3bb;
+      --sec-sunset-yellow-020: #feedd1;
+      --sec-sunset-yellow-010: #fff6e8;
+      --sec-salmon-pink-090: #ff7a77;
+      --sec-salmon-pink-080: #ff8986;
+      --sec-salmon-pink-070: #ff9795;
+      --sec-salmon-pink-060: #ffa6a4;
+      --sec-salmon-pink-050: #ffb5b4;
+      --sec-salmon-pink-040: #ffc4c3;
+      --sec-salmon-pink-030: #ffd3d2;
+      --sec-salmon-pink-020: #ffe1e1;
+      --sec-salmon-pink-010: #fff0f0;
+      --sec-orchid-purple-110: #ce35a1;
+      --sec-orchid-purple-080: #ea62c2;
+      --sec-orchid-purple-090: #e84fbb;
+      --sec-orchid-purple-070: #ed76ca;
+      --sec-orchid-purple-060: #ef89d1;
+      --sec-orchid-purple-050: #f29dd9;
+      --sec-orchid-purple-040: #f5b1e1;
+      --sec-orchid-purple-030: #f7c4e8;
+      --sec-sunset-yellow-050: #fdd18d;
+      --sec-orchid-purple-020: #fad8f0;
+      --sec-orchid-purple-010: #fcebf7;
+      --sec-salmon-pink-110: #e6605e;
+      --transparency: rgba(255, 255, 255, 0);
+      --colour-fec-800: #fec800;
+      --white-two: #efefef;
+      --core-error-2-2-2: #c90000;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+      overflow-x: hidden;
+      width: 100vw;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}

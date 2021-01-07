@@ -1,0 +1,185 @@
+/* M E D I A   Q U E R I E S */
+
+@media screen and (max-width: 1390px) {
+
+      nav {
+            height: 125px;
+            ;
+      }
+
+      nav ul {
+            padding: 15px 20px 20px 750px;
+            height: 100%;
+      }
+
+      nav ul li {
+            margin: 0;
+            padding: 4rem 0;
+      }
+
+      nav ul li a {
+            padding: 0;
+            margin-right: 3rem;
+      }
+
+      .logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-left: 80px;
+            padding-top: 20px;
+      }
+
+      .hero__wrapper {
+            position: relative;
+            top: -100px;
+
+      }
+
+      .hero__text {
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            z-index: 1
+      }
+
+      .hero__text h2 {
+            font-size: 7rem;
+            padding: 0;
+            margin-right: 650px;
+      }
+
+      .hero__text p {
+            font-size: 6rem;
+      }
+
+      .stroke {
+            position: absolute;
+            right: -5px;
+            top: 575px;
+            width: initial;
+      }
+
+      .news__title {
+            position: absolute;
+            top: 650px;
+            left: -200px;
+      }
+
+      .articles__wrapper {
+            padding-top: 220px;
+            padding-right: 0;
+      }
+
+      .card {
+            width: 260px;
+            height: 300px;
+            margin-right: 50px;
+      }
+
+      .flex__wrapper {
+            flex-flow: row wrap;
+            flex-basis: 70%;
+      }
+
+      .flex__wrapper img {
+            height: 150px;
+            width: 100%;
+
+
+      }
+
+      .articles__track {
+            flex-grow: 1;
+            flex-basis: 30%;
+            border: none;
+            max-height: 1800px;
+            overflow-y: hidden;
+      }
+
+      .card::before {
+            top: 118px;
+      }
+
+      .card h2 {
+            padding: 10px 0 0 0;
+            font-size: 1.4rem;
+      }
+
+      .card p {
+            padding: 0;
+      }
+
+      .square {
+            width: 120px;
+            height: 120px;
+      }
+
+
+      .sub__content {
+            margin-top: 100px;
+            margin-bottom: 50px;
+      }
+
+      .sub__content p {
+            padding: 150px 300px 0 300px;
+            ;
+            ;
+      }
+
+      .article__btn {
+            padding: 5px 139px 11px 20px;
+      }
+
+      .article__btn .line {
+            top: 23px;
+      }
+
+      .logo__footer {
+            position: relative;
+            top: 30px;
+            left: 80px;
+      }
+
+      .hills {
+            top: 5px;
+            right: -600px;
+
+      }
+
+
+      .social__icons {
+            width: 90%;
+
+      }
+
+      .footer {
+            width: 90%;
+            padding-right: 0;
+      }
+
+      .footer a {
+            padding: 1rem
+      }
+
+      .footer span {
+            margin-left: 255px;
+            padding-right: 0;
+      }
+
+
+      .news__title h1 {
+            animation-delay: 1.5s;
+
+      }
+
+      .news__title p {
+            animation-delay: 1.8s;
+      }
+
+
+
+
+
+
+}
