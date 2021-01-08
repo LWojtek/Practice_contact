@@ -125,7 +125,7 @@ body {
 .hero__text {
   position: absolute;
   top: 550px;
-  left: 300px;
+  left: 250px;
   z-index: 1;
 }
 
@@ -139,19 +139,23 @@ body {
 .hero__text h2 {
   font-size: 12rem;
   font-weight: bold;
-  padding: 10px;
+  padding: 0;
   margin-right: 800px;
   -webkit-animation: from-bottom .3s ease-in, appear 1s ease-in forwards;
           animation: from-bottom .3s ease-in, appear 1s ease-in forwards;
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
   opacity: 0;
+  font-style: italic;
 }
 
 .hero__text p {
+  padding-left: 10px;
+  margin-bottom: -20px;
   font-size: 8rem;
   -webkit-animation: from-right .3s ease-in, appear .8s ease-in forwards;
           animation: from-right .3s ease-in, appear .8s ease-in forwards;
+  font-style: italic;
 }
 
 .hero {
@@ -225,12 +229,6 @@ nav {
   position: fixed;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-top: 43px;
-  margin-right: 20px;
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,6 +241,12 @@ nav ul {
   text-align: center;
   padding-bottom: 30px;
   padding-left: 190px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-top: 43px;
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -381,6 +385,32 @@ nav ul li a:hover {
   }
 }
 
+@-webkit-keyframes to-right {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes to-right {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes from-top {
   from {
     -webkit-transform: translateY(-50px);
@@ -437,10 +467,12 @@ nav ul li a:hover {
   from {
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
+    opacity: 0;
   }
   to {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -448,10 +480,38 @@ nav ul li a:hover {
   from {
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
+    opacity: 0;
   }
   to {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes to-bottom {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes to-bottom {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
   }
 }
 
@@ -594,6 +654,15 @@ nav ul li a:hover {
   top: -250px;
 }
 
+.locations__container--wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 0px;
+}
+
 .contact__text {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -609,15 +678,6 @@ nav ul li a:hover {
 
 .contact__text p {
   font-size: 1.6rem;
-}
-
-.locations__container--wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-right: 0px;
 }
 
 .tab a {
@@ -1180,6 +1240,9 @@ footer {
 
 /* M E D I A   Q U E R I E S */
 @media screen and (max-width: 1390px) {
+  /* **************************** */
+  /* **** N A V I G A T I O N *** */
+  /* **************************** */
   nav {
     height: 125px;
   }
@@ -1202,6 +1265,9 @@ footer {
     padding-left: 80px;
     padding-top: 20px;
   }
+  /* **************************** */
+  /* ********* H E R O  ********* */
+  /* **************************** */
   .hero__wrapper {
     position: relative;
     top: -100px;
@@ -1209,16 +1275,12 @@ footer {
   .hero__text {
     position: absolute;
     top: 300px;
-    left: 200px;
+    left: 50px;
     z-index: 1;
   }
   .hero__text h2 {
-    font-size: 7rem;
     padding: 0;
-    margin-right: 650px;
-  }
-  .hero__text p {
-    font-size: 6rem;
+    margin-right: 400px;
   }
   .stroke {
     position: absolute;
@@ -1226,20 +1288,34 @@ footer {
     top: 575px;
     width: initial;
   }
+  /* ************************** */
+  /* **** L O C A T I O N S *** */
+  /* ************************** */
+  .contact__text,
+  .locations__container--wrapper {
+    margin-top: 180px;
+  }
+  .contact__text {
+    padding: 50px 90px;
+  }
+  .contact__text h1 {
+    font-size: 5rem;
+  }
   .news__title {
     position: relative;
     top: 150px;
     width: 100%;
     padding-left: 100px;
   }
+  .tab {
+    margin-right: 0;
+  }
+  .tab p {
+    margin-right: 10px !important;
+  }
   .articles__wrapper {
     padding-top: 220px;
     padding-right: 0;
-  }
-  .card {
-    width: 230px;
-    height: 270px;
-    margin: 10px;
   }
   .articles__track {
     max-height: 1800px;
@@ -1250,34 +1326,10 @@ footer {
   .track {
     margin-right: 5px !important;
   }
-  .logo__footer {
-    position: relative;
-    top: 30px;
-    left: 80px;
-  }
-  .hills {
-    top: 5px;
-    right: -600px;
-  }
-  .tab {
-    margin-right: 0;
-  }
-  .tab p {
-    margin-right: 10px !important;
-  }
-  .social__icons {
-    width: 90%;
-  }
-  .footer {
-    width: 90%;
-    padding-right: 0;
-  }
-  .footer a {
-    padding: 1rem;
-  }
-  .footer span {
-    margin-left: 255px;
-    padding-right: 0;
+  .card {
+    width: 230px;
+    height: 270px;
+    margin: 10px;
   }
   .news__title h1 {
     -webkit-animation-delay: 1.5s;
@@ -1292,18 +1344,34 @@ footer {
     -webkit-box-shadow: 0 3px 2px #cacaca;
             box-shadow: 0 3px 2px #cacaca;
   }
-  .contact__text,
-  .locations__container--wrapper {
-    margin-top: 180px;
-  }
-  .contact__text {
-    padding: 50px 90px;
-  }
-  .contact__text h1 {
-    font-size: 5rem;
-  }
   .articles__track::after {
     bottom: -2850px;
+  }
+  /* ************************** */
+  /* ****** F O O T E R ******* */
+  /* ************************** */
+  .footer {
+    width: 90%;
+    padding-right: 0;
+  }
+  .footer a {
+    padding: 1rem;
+  }
+  .footer span {
+    margin-left: 255px;
+    padding-right: 0;
+  }
+  .logo__footer {
+    position: relative;
+    top: 30px;
+    left: 80px;
+  }
+  .hills {
+    top: 5px;
+    right: -600px;
+  }
+  .social__icons {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

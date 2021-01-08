@@ -1,16 +1,14 @@
 .hero__wrapper {
       position: relative;
-
       width: 100%;
       top: -300px;
       left: 0;
-
 }
 
 .hero__text {
       position: absolute;
       top: 550px;
-      left: 300px;
+      left: 250px;
       z-index: 1;
 
       h2,
@@ -23,19 +21,22 @@
       h2 {
             font-size: 12rem;
             font-weight: bold;
-            padding: 10px;
+            padding: 0;
             margin-right: 800px;
             animation: from-bottom .3s ease-in,
                   appear 1s ease-in forwards;
             animation-delay: .5s;
             opacity: 0;
+            font-style: italic;
       }
 
       p {
+            padding-left: 10px;
+            margin-bottom: -20px;
             font-size: 8rem;
             animation: from-right .3s ease-in,
                   appear .8s ease-in forwards;
-
+            font-style: italic;
       }
 }
 
